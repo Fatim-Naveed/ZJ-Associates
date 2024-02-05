@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar  */
+nav
+{
+    margin-left: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px 2%;     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.MainName
+{
+    display: flex;
+
+}
+.mainName1
+{
+  color :white;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.mainName2
+{
+    margin-left: 6%;
+    margin-top: 4%;
+    color: rgb(147, 147, 147);
+}
+
+.sub-menu-wrap-Right
+{
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    right:0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/* box of left dropdown  */
+.sub-menu-wrap-Left
+{
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    left:0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/* box of right dropdown onclick */
+.sub-menu-wrap-Right.open-menu
+{
+    max-height: 400px;
+}
+/* box of left dropdown onclick */
+.sub-menu-wrap-Left.open-menu
+{
+    max-height: 400px;
+}
+/* box of right dropdown color,align*/
+.sub-menu-Right
+{
+    background-color:rgb(0, 0, 0);
+    padding: 10%;
+    text-align: right;
+}
+/* box of left dropdown color,align*/
+.sub-menu-Left
+{
+    background-color:rgb(0, 0, 0);
+    padding: 10%;
+    text-align: left;
+}
+/* text of right dropdown */
+.right-menu
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+}
+/* text of right dropdown */
+.Left-menu
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+}
+/* text of right dropdown */
+.sub-menu-link-Right
+{
+    text-decoration: none;
+    margin: 12px 0;
+}
+/* text of left dropdown */
+.sub-menu-link-Left
+{
+    text-decoration: none;
+    margin: 12px 0;
+}
+.sub-menu-link-Right p
+{
+    margin-top: 7px;
+    color:rgb(176, 170, 170);
+    text-decoration: none;
+}
+.sub-menu-link-Left p
+{
+    margin-top: 7px;
+    color:rgb(176, 170, 170);
+    text-decoration: none;
+}
+.sub-menu-link-Right :hover 
+{
+    margin-top: 7px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.sub-menu-link-Left :hover 
+{
+    margin-top: 7px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.lefticonbar
+{
+    width: 3%;
+    margin-left: 0cm;    
+}
+.Righticonbar
+{
+    width: 3%;
+    margin-left: 0cm;    
+}
+.images{
+      margin-top: 3%;
+       display: flex;
+}
+.textImage1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-left: 23%;
+}
+.textImage2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-left: 23.7%;
+}
+.textImage3
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-left: 28.3%;
+
+}
+.textImage4
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-left: 23%;
+
+}
+.subtext1Image1
+{
+    margin-left: 25%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext2Image1
+{
+    margin-left: 78%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext1Image2
+{
+    margin-left: 12%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext2Image2
+{
+    margin-left: 76%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext1Image3
+{
+    margin-left: 65%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext2Image3
+{
+    margin-left: 65%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext1Image4
+{
+    margin-left: 43%;
+    opacity: 50%;
+   font-size: small;
+}
+.subtext2Image4
+{
+    margin-left: 78%;
+    opacity: 50%;
+   font-size: small;
+}
+.image1
+{
+       /* margin-top: 3%; */
+       margin-left: 3%;
+       height: 0%;  
+       width: 30%;
+       position: relative;
+}
+
+footer
+{
+    margin-left: 0;
+    margin-bottom:0;
+    background-color: black;
+    color:white;
+    width: 100%;
+    height:100%;
+    padding: 10px 2%;     
+    display: flex;
+    align-items:flex-start;
+    justify-content:center
+    /* position: relative; */
+}
+footer p
+{
+    margin-right: 5%;
+}
