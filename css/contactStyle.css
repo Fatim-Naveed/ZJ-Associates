@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contactnavbar{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(0, 0, 0);
+    padding-top: 10px;
+    position: sticky;
+    top:0px
+    
+  
+   
+}
+
+.contact{
+
+    color:rgb(255, 255, 255);
+    font-size: x-large;
+    font-family: sans-serif;
+   margin-left: 20px;
+   
+ 
+}
+
+.container
+{
+    display:block;
+}
+.block1
+{
+    display:block;
+    margin-left: 6%;
+    
+    margin-top:5%;
+    justify-content: center;
+}
+
+.sub1
+{
+     display: flex;
+}
+.sub 
+{
+      width:45%;
+      height: 120px;
+      margin: 5px;
+      background-color: rgb(211, 211, 211);
+      border-radius:10px;
+      display: flex;
+      
+     
+}
+.blocks
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    min-width: 70%;
+    
+}
+
+
+.contactlogo a i
+{
+    
+    text-decoration: none;
+    color: black;
+    font-size:30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: right;
+
+
+}
+
+.maintext
+{
+    margin-left: 8%;
+    margin-top: 2%;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.subtext
+{
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.number
+{
+    margin-left: 9%;
+   
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 100;
+    opacity: 50%;
+}
+.contactimg
+{
+    width: 50%;
+  
+}
+.block2
+{
+    margin-top: 3%;
+    display: block;
+    text-align: center;
+}
+nav
+{
+    
+    margin-left: 0;
+    background-color: black;
+    width: 100%;
+   
+    
+   
+}
+
+.navbar{
+
+    padding: 10px 2%;     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+   
+}
+.MainName
+{
+    display: flex;
+
+}
+.mainName1
+{
+  color :white;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.mainName2
+{
+    margin-left: 6%;
+    margin-top: 4%;
+    color: rgb(147, 147, 147);
+}
+
+.sub-menu-wrap-Right
+{
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    right:0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/* box of left dropdown  */
+.sub-menu-wrap-Left
+{
+    position: absolute;
+   
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    left:0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/* box of right dropdown onclick */
+.sub-menu-wrap-Right.open-menu
+{
+    max-height: 400px;
+}
+/* box of left dropdown onclick */
+.sub-menu-wrap-Left.open-menu
+{
+    max-height: 400px;
+}
+/* box of right dropdown color,align*/
+.sub-menu-Right
+{
+
+   background-color: black;
+    padding: 10%;
+    text-align: right;
+}
+/* box of left dropdown color,align*/
+.sub-menu-Left
+{
+    background-color:rgb(0, 0, 0);
+    padding: 10%;
+    text-align: left;
+}
+/* text of right dropdown */
+.right-menu
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+}
+/* text of right dropdown */
+.Left-menu
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+}
+/* text of right dropdown */
+.sub-menu-link-Right
+{
+    text-decoration: none;
+    margin: 12px 0;
+}
+/* text of left dropdown */
+.sub-menu-link-Left
+{
+    text-decoration: none;
+    margin: 12px 0;
+}
+.sub-menu-link-Right p
+{
+    margin-top: 7px;
+    color:rgb(176, 170, 170);
+    text-decoration: none;
+}
+.sub-menu-link-Left p
+{
+    margin-top: 7px;
+    color:rgb(176, 170, 170);
+    text-decoration: none;
+}
+.sub-menu-link-Right :hover 
+{
+    margin-top: 7px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.sub-menu-link-Left :hover 
+{
+    margin-top: 7px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.lefticonbar
+{
+    width: 3%;
+    margin-left: 0cm;    
+}
+.Righticonbar
+{
+    width: 3%;
+    margin-left: 0cm;    
+}
+@media only screen and (max-width:700px)  {
+    .sub1
+{
+     display: block;
+}
+.sub 
+{
+      width:90%;
+      height: 120px;
+      margin: 2%;
+      margin-left: 5%;
+      background-color: rgb(211, 211, 211);
+      border-radius:10px;
+      display: flex;
+      
+     
+}
+}
