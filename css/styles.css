@@ -9,7 +9,7 @@
 /* nav bar  */
 nav
 {
-    margin-left: 0;
+    margin-bottom: 30px;
     background-color: black;
     width: 100%;
     padding: 10px 2%;     
@@ -148,6 +148,77 @@ nav
     width: 3%;
     margin-left: 0cm;    
 }
+/* nav bar end */
+/* side bar */
+.sidebar
+{
+    display: block;
+    width: 68px;
+    top:200px;
+    position: fixed;
+    z-index: 1;
+    
+}
+.sideicons
+{
+   
+    display: grid;
+    line-height: 32px;
+}
+.sideicons p
+{
+   
+    margin-left:5px;
+     font-size: 1em;
+     background-color: white;
+     border-radius: 350px; 
+     font-family:system-ui;
+}
+.sideicons a
+{
+    
+    text-decoration: none;
+    background-color: white;
+    min-height: 20px;
+    border-radius: 200px; 
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sideicons a i
+{
+      font-size: 1.7em;
+      color:black;
+      opacity: 0.9;
+      margin-top: 10px;
+      justify-content: center;
+      
+}
+.sideicons  a:hover
+{
+    background-color: black;
+   
+     transition: 0.5s;
+   
+
+}
+.sideicons  p:hover
+{
+    background-color: black;
+    color: white;
+     transition: 0.5s;
+   
+
+}
+.sideicons  a:hover i
+{
+   color:white;
+     transition: 0.5s;
+   
+
+}
+ /* end of sidebar */
 /* largest screen */
 @media only screen and (min-width:600px)
 {
@@ -155,7 +226,7 @@ nav
 .images
 {        
     max-height: max-content; 
-    margin-top: 3%;
+    /* margin-top: 3%; */
     /* margin-bottom: 3%; */
     display: flex;
     overflow: hidden;
@@ -179,9 +250,18 @@ nav
     padding-right: 2%;
     margin-left: 200px;
     text-align: right;
-    transition: transform 0.6s;
+    /* transition: transform 0.6s; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+    transition-duration: 1.5s;
+    transition-property: padding-top;
+}
+.images .addtexthovering
+{
+    transform: scale(1.15);
+    padding-top: 2%;
+    transition-duration: 1s;
+    transition-property: padding-top;
 }
 .subtext1
 {
@@ -218,8 +298,8 @@ nav
     
     margin-top: 3%;
     margin-left: 4%;
-    min-width:32%;
-    max-width: fit-content;
+    min-width:40%;
+    /* max-width:40%; */
     height: 300px;
     white-space: normal;
     overflow-y: scroll;
@@ -257,13 +337,6 @@ nav
 {
     transform: scale(1.5);
     width: 45%;
-}
-.images .addtexthovering
-{
-    transform: scale(1.15);
-    transition-duration: 1s;
-    padding-top: 2%;
-    transition-property: padding-top;
 }
 
 }
@@ -383,6 +456,7 @@ nav
        width: 32%;
    }
 }
+/* footer css */
 footer
 {
     

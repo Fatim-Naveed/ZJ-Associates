@@ -5,17 +5,19 @@
     scroll-behavior: smooth;
 }
 
-.contactnavbar{
+.careernavbar{
     width: 100%;
     height: 50px;
     background-color:rgb(0, 0, 0);
     padding-top: 10px;
     position: sticky;
-    top:0px;
-    z-index: 90;   
+    top:0px
+    
+  
+   
 }
 
-.contact{
+.career{
 
     color:rgb(255, 255, 255);
     font-size: x-large;
@@ -27,93 +29,28 @@
 
 .container
 {
-    display:block;
+    min-width:80%;
+    margin:5%;
+    height: 350px;
+    border-radius: 5px;
+    background-color: rgb(173, 173, 173);
 }
-.block1
+.text
 {
-    display:block;
-    margin-left: 6%;
-    
-    margin-top:5%;
-    justify-content: center;
-}
-
-.sub1
-{
-     display: flex;
-}
-.sub 
-{
-      width:45%;
-      height: 120px;
-      margin: 5px;
-      background-color: rgb(227, 227, 227);
-      border-radius:10px;
-      display: flex;
-      
-     
-}
-.blocks
-{
-    text-decoration: none;
-    color: black;
-    display: block;
-    min-width: 70%;
-    
-}
-
-
-.contactlogo a i
-{
-    
-    text-decoration: none;
-    color: black;
-    font-size:30px;
     margin-top: 10px;
-    margin-left: 50px;
-    text-align: center;
-    justify-content: right;
-
-
+    margin-left: 10px;
+    color:black;
+    font-family: sans-serif;
 }
-
 .maintext
 {
-    margin-left: 8%;
-    margin-top: 2%;
-    font-size: larger;
-    font-family: sans-serif;
-    font-weight: 100;
+    font-size: 60px;
 }
 .subtext
 {
-    margin-left: 9%;
-    margin-top: 2%;
-    font-size: medium;
-    font-family: sans-serif;
-    font-weight: 100;
+    font-size: 50px;
+    margin-top: 2px;
 }
-.number
-{
-    margin-left: 9%;
-   
-    font-size: medium;
-    font-family: sans-serif;
-    font-weight: 100;
-    opacity: 50%;
-}
-.contactimg
-{
-    width: 50%;
-  
-}
-.block2
-{
-    margin-top: 3%;
-    display: block;
-    text-align: center;
-}
-/* start of navbar */
 nav
 {
     
@@ -264,68 +201,7 @@ nav
     width: 3%;
     margin-left: 0cm;    
 }
-/* end of .navbar */
-/* side bar */
-.sidebar
-{
-    display: block;
-    width: 40px;
-    top:200px;
-    position: fixed;
-    z-index: 1;
-    
-}
-.sideicons
-{
-   
-    display: grid;
-    line-height: 32px;
-}
-.sideicons p
-{
-   
-    margin-left:5px;
-     font-size: 1em;
-     font-family:system-ui;
-}
-.sideicons a
-{
-    
-    text-decoration: none;
-    background-color: white;
-    min-height: 20px;
-    border-radius: 200px; 
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.sideicons a i
-{
-      font-size: 1.7em;
-      color:black;
-      opacity: 0.9;
-      margin-top: 10px;
-      justify-content: center;
-      
-}
-.sideicons  a:hover
-{
-    background-color: black;
-     transition: 0.5s;
-   
-
-}
-.sideicons  a:hover i
-{
-   color:white;
-     transition: 0.5s;
-   
-
-}
- /* end of sidebar */
-@media only screen and (max-width:700px)  
-{
+@media only screen and (max-width:700px)  {
     .sub1
 {
      display: block;
@@ -342,12 +218,8 @@ nav
       
      
 }
-iframe
-{
-    width:80%;
-    filter:invert(100%);
 }
-}
+
 /* footer css */
 footer
 {
@@ -369,11 +241,12 @@ footer
     display: flex;
     justify-content: center;
 }
+
 .socialicon a
 {
     
     text-decoration: none;
-    background-color: white;
+    background-color: rgb(255, 251, 251);
     margin:28px;
     width:50px;
     min-height: 50px;
@@ -386,12 +259,13 @@ footer
 .socialicon a i
 {
       font-size: 2em;
-      color:black;
+      color:rgb(0, 0, 0);
       opacity: 0.9;
       margin-top: 10px;
       justify-content: center;
       
 }
+
 .socialicon  a:hover
 {
     background-color: black;
@@ -454,14 +328,18 @@ transition:0.5s;
 {
   color:white;
 }
-iframe
-{
-    
-    filter:invert(100%);
-}
-/* tablet view  */
+
 @media  (max-width:900px)
 {
+    .maintext
+{
+    font-size: 40px;
+}
+.subtext
+{
+    font-size: 30px;
+    margin-top: 2px;
+}
     .socialicon a
 {
     
@@ -502,9 +380,9 @@ iframe
 }
     
 }
-/* mobile view    */
 @media  (max-width:650px)
 {
+
     .logo
 {
     width:100px;
@@ -540,6 +418,7 @@ iframe
 {
     display: block;
   justify-content: center;
+  text-align: center;
   margin-left:5px; 
    
 } 
@@ -553,18 +432,13 @@ font-size:1em;
 opacity:0.7;
 transition:0.5s;
 }
-iframe
+.maintext
 {
-    width:80%;
-    height: 400px;
-    margin-left: 30px;
-    filter:invert(100%);
+    font-size: 30px;
 }
-/* side bar */
-.sidebar
+.subtext
 {
-    display: none;    
+    font-size: 20px;
+    margin-top: 2px;
 }
- /* end of sidebar */
 }
-
