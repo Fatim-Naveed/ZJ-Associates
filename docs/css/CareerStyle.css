@@ -29,8 +29,11 @@
 
 .container
 {
-    min-width:80%;
-    margin:5%;
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     height: 350px;
     border-radius: 5px;
     background-color: rgb(173, 173, 173);
@@ -226,13 +229,15 @@ footer
     
     background-color: black;
     margin-top:10px;
+     height: 800px;
+ 
 }
 .footercontainer
 {
     width:100%;
    padding-top: 20px;
    display:flex;
-   justify-content:normal;
+   
    
     
 }
@@ -331,6 +336,16 @@ transition:0.5s;
 
 @media  (max-width:900px)
 {
+    .lefticonbar
+{
+    width: 4%;
+    margin-left: 0cm;
+}
+.Righticonbar
+{
+    width: 4%;
+    margin-left: 0cm;
+}
     .maintext
 {
     font-size: 40px;
@@ -372,7 +387,7 @@ transition:0.5s;
 } 
 .logo
 {
-    width:110px;
+    width:90px;
     align-self: flex-start;
     margin-top: 40px;
     margin-left: 50px; 
@@ -382,13 +397,22 @@ transition:0.5s;
 }
 @media  (max-width:650px)
 {
-
+.lefticonbar
+{
+    width: 5%;
+    margin-left: 0cm;
+}
+.Righticonbar
+{
+    width: 5%;
+    margin-left: 0cm;
+}
     .logo
 {
-    width:100px;
+    width:20%;
     align-self: flex-start;
     margin-top: 40px;
-    margin-left: 30px; 
+    margin-left: 4%; 
     
 }
 .socialicon a
@@ -396,9 +420,9 @@ transition:0.5s;
     
     text-decoration: none;
     background-color: rgb(255, 255, 255);
-    margin:18px;
-    width:29px;
-    min-height: 29px;
+    margin:16px;
+    width:27px;
+    min-height: 27px;
     border-radius: 200px; 
     justify-content: center;
     text-align: center;
@@ -407,7 +431,7 @@ transition:0.5s;
 
 .socialicon a i
 {
-      font-size: 1em;
+      font-size: 0.8em;
       color:rgb(0, 0, 0);
       opacity: 0.9;
       margin-top: 7px;
@@ -419,16 +443,17 @@ transition:0.5s;
     display: block;
   justify-content: center;
   text-align: center;
-  margin-left:5px; 
+  margin-left:3px; 
+  margin-right: 0%;
    
 } 
 
 .aboutFooter ul li a
 {
 color: white;
-margin: 5px;
+margin: 3px;
 text-decoration: none;
-font-size:1em;
+font-size:0.9em;
 opacity:0.7;
 transition:0.5s;
 }

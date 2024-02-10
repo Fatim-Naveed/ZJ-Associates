@@ -1,7 +1,36 @@
 (function()
 {
 "use strict"
+//scroll anmation
+let imagebox=document.querySelectorAll('.image')
+let Textbox=document.querySelectorAll('.textImage')
+window.addEventListener('scroll', function()
+{
+     const trigger=window.innerHeight/5*4;
+    //  console.log(trigger);
+     
+     imagebox.forEach((image,i) => 
+    {
+        const imagetop=image.getBoundingClientRect().top;
+        // console.log(imagetop)
+        // console.log(i+1)
+            if(imagetop < 122 * (i+1))
+            {
+                image.classList.add("zoomImage");
+                Textbox[i].classList.add("zoomtext");
+                
+            }
+            else 
+            {
+                image.classList.remove("zoomImage");
+                Textbox[i].classList.remove("zoomtext");
+             
+            }
+     });
 
+
+    
+})
 // click action for menu of navbar
 let onclickingRight=document.getElementById('subMenuRight')
 let Righticon =document.getElementById('RightIcon');
@@ -38,11 +67,10 @@ Righticon.addEventListener('click', function (e)
     
     // removing date from image on small screen
     
-    document.getElementById('imageid1').addEventListener('click',function(e)
-    {
+document.getElementById('imageid1').addEventListener('click',function(e)
+{
         document.getElementById('textImageid1').classList.toggle("addtexthovering");
-        let image=document.getElementById('imageid1');
-        image.classList.toggle("addhov");
+        document.getElementById('imageid1').classList.toggle("addhov");
         document.getElementById('scrollmenu1').classList.toggle("UnhideText");
         document.getElementById("subtexthide1").classList.toggle("UnhideText");
         let subclasses=document.getElementById("scrollmenu1");
@@ -79,4 +107,5 @@ document.getElementById('imageid3').addEventListener('click',function(e)
         }
     
 })
+    
 })();
