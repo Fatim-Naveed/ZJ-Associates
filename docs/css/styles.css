@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
-/* nav bar  */
+/*//////////////////////////////////////// nav bar  ////////////////////////////////////////////*/
 nav
 {
     margin-bottom: 30px;
@@ -219,14 +219,12 @@ nav
  /* end of sidebar */
  /* ==================================================================================================== */
 /*================================ largest screen ======================================================*/
-@media only screen and (min-width:600px)
+@media only screen and (min-width:1075px)
 {
     
 .images
 {        
     max-height: max-content; 
-    /* margin-top: 3%; */
-    /* margin-bottom: 3%; */
     display: flex;
     overflow: hidden;
     white-space: nowrap;
@@ -256,25 +254,29 @@ nav
 }
 .textImage
 {
-    transition: transform 1s;
     transform: scale(1);
-
+    transition: transform 1.5s ease;
+    
     min-width:185px;
-    padding-top: 5%;
     padding-right: 2%;
     margin-left: 200px;
     text-align: right;
     font-family:system-ui;
     font-size: larger;
-    /* transition-duration: 1.5s;
-    transition-property: padding-top; */
+    
+    
+    padding-top: 5%;
+    transition-property: padding-top;
+     transition-duration: 1.5s;
+
 }
 .images .addtexthovering
 {
     transform: scale(1.15);
+    transition: transform 1s ease-in-out;
     padding-top: 2%;
+    transition-property: padding-top ;
     transition-duration: 1s;
-    transition-property: padding-top;
 }
 .images .addhov
 {
@@ -354,32 +356,134 @@ nav
 }
 
 }
-/*================================= media query for mobile============================================ */
-@media only screen and (max-width:600px)
+/*====================== media query for mobile============================================ */
+@media only screen and (max-width:650px)
 {
-.images{
+.lefticonbar
+{
+    width: 5%;
+    margin-left: 0cm;    
+}
+.Righticonbar
+{
+    width: 5%;
+    margin-left: 0cm;    
+}
+.images
+{   
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+.images .addhov
+{
+    transform: scale(1.02);
+    transition: transform 0.5s;
+   
+}
+.images::-webkit-scrollbar
+{
+    width: 0;
+}
     
-    max-height: max-content;
-     margin-top: 3%;
-      display: flex;
-      flex-direction: column;
-      flex-direction: column-reverse;
+.myMobileView
+{
+   
+    min-height: 250px;
+    max-height: 300px;
+    min-width: 85%;
+    max-width: 100%;
+    margin: 7% 5% 2% 8%;
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.image
+{
+    margin-top: 10px;
+    align-self: center;
+    /* margin-left: 7%; */
+ 
+
+      width:-webkit-fill-available;
+      max-width: 100%;
+    max-height:100%;
+
+      position: relative;
+      transition: transform 0.6s;
+      cursor:pointer;
+      box-shadow: 5px 3px 3px lightgray;
 }
 .textImage
 {
-   width:100%;
-   margin-left:5%;
-   text-align: left;
+
+   width:max-content;
+   padding-top: 1%;
+   width:fit-content;
+   /* margin-left: 13%; */
+  
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: small;
     
    br{content:' ';}
-  br:after{content:' ';}
+   br:after{content:' ';}
+
+}
+.images .addtexthovering
+{
+    transform: scale(1.09);
+    transition: transform 0.3s ;
+     padding-top: 3%; 
+    /* transition-property: padding-top ; */
+    /* transition-duration: 0.3s; */
+
+}
+.TextDescription1
+{
+    height: 70%;
+    min-width: 33%;
+    margin: 8% 2% 2% 2%;
+    white-space: normal;
+    overflow-y: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    position: relative;
+    cursor:pointer;
+    opacity: 1;
+    /* transition: transform 1s; */
+    transition: opacity 900ms ease-in-out;
 }
 .TextDescription
 {
+    
+    /* min-height: 230px; */
+    max-height: 230px;
+    min-width: 80%;
+    /* max-width: 100%; */
+    
+    margin: 5% 2% 7% 2%;
+
+    white-space: normal;
+    overflow-y: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    position: relative;
+    cursor:pointer;
+    opacity: 1;
+    /* transition: transform 1s; */
+    transition: opacity 900ms ease-in-out;
+    box-shadow: 5px 3px 3px lightgray;
+    
+}
+.TextDescription1::-webkit-scrollbar {
     display: none;
 }
+
 .subtext1
 {
    margin-left: 0%;
@@ -393,38 +497,37 @@ nav
   font-size: small;
   display: none;
 }
-.image
+.subtext3 , .subtext4
 {
-      /* margin-top: 3%; */
-      max-width: 100%;
-      margin-left: 5%;
-      height: 0%;  
-      width: 90%;
-      position: relative;
-      transition: transform 0.6s;
-      cursor:pointer;
+    display: none;
 }
-.footernav ul
+.sidebar
 {
-    flex-direction:column;
+    display: none;
+}
 
 }
-.footernav ul li
+/*=============================== media query  tablet  ======================== */
+@media only screen and (min-width:651px) and (max-width:1075px)
 {
-    width:100%;
-    text-align:center;
-     margin:10px;
 
-}
-}
-/*================================== media query  tablet  ======================== */
-@media only screen and (min-width:600px) and (max-width:1090px)
-{
+    .lefticonbar
+    {
+        width: 4%;
+        margin-left: 0cm;
+    }
+    .Righticonbar
+    {
+        width: 4%;
+        margin-left: 0cm;
+    }
     .images{
     
         max-height: max-content;
          margin-top: 3%;
           display: flex;
+          margin-left: auto;
+          margin-right: auto;
    }
    .TextDescription
 {
@@ -432,11 +535,11 @@ nav
 }
    .textImage
    {
-       width:40%;
+       width:30%;
        margin-left: 0%;
        text-align: right;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       font-size: small;
+       font-size: large;
    }
    .subtext1
    {
@@ -450,39 +553,41 @@ nav
        opacity: 50%;
       font-size: small;
    }
+   .subtext3 ,.subtext4
+   {
+    display: none;
+   }
    .image
    {
-          /* margin-top: 3%; */
-          max-width: 60%;
+      
           margin-left: 3%;
           height: 0%;  
-          width: 30%;
+          width: 45%; 
           position: relative;
           transition: transform 0.6s;
           cursor:pointer;
    
    }
-   .images img:hover
-    {
-       /* transition-delay: 1s; */
-       transform: scale(1.1);
-       width: 32%;
-   }
+ 
 }
 /* ========================================================================================================== */
+/* footer css */
 /* footer css */
 footer
 {
     
     background-color: black;
-    margin-top:10px;
+   
+    width: 100%;
+  
+ 
 }
 .footercontainer
 {
     width:100%;
    padding-top: 20px;
    display:flex;
-   justify-content:normal;
+   
    
     
 }
@@ -491,11 +596,12 @@ footer
     display: flex;
     justify-content: center;
 }
+
 .socialicon a
 {
     
     text-decoration: none;
-    background-color: white;
+    background-color: rgb(255, 251, 251);
     margin:28px;
     width:50px;
     min-height: 50px;
@@ -508,12 +614,13 @@ footer
 .socialicon a i
 {
       font-size: 2em;
-      color:black;
+      color:rgb(0, 0, 0);
       opacity: 0.9;
       margin-top: 10px;
       justify-content: center;
       
 }
+
 .socialicon  a:hover
 {
     background-color: black;
@@ -570,11 +677,164 @@ transition:0.5s;
 }
 .footerbottom
 {
-   
-   
     text-align: center;
 }
 .footerbottom p
 {
   color:white;
+}
+/* footer in tablet view */
+@media  (max-width:1050px)
+{
+   
+  body{
+    min-height: 100vh;
+  }
+  footer{
+    position: sticky;
+    top:100%;
+    margin-top: 10px;
+  }
+.socialicon
+{
+    margin-left: 4.4%;
+    margin-top: 10px;
+    justify-content: left;
+}
+.socialicon .icons
+{
+    margin-left: 15%;
+}
+.socialicon .icon1
+{
+    margin-left: 17%;
+}
+    .socialicon a
+{
+    
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    margin:18px;
+    width:29px;
+    min-height: 29px;
+    border-radius: 200px; 
+    justify-content: center;
+    text-align: center;
+    
+}
+.sidebar
+{
+    display: none;
+}
+
+.socialicon a i
+{
+      font-size: 1em;
+      color:rgb(0, 0, 0);
+      opacity: 0.9;
+      margin-top: 7px;
+      justify-content: center;
+      
+}
+.f_content
+{
+    display: block;
+  justify-content: center;
+  margin-left:auto;
+  margin-right: auto;  
+   
+} 
+.logo
+{
+    width:90px;
+    align-self: flex-start;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+}
+
+/* footer in mobile view  */
+@media  (max-width:650px)
+{
+    nav
+    {
+        margin-bottom: 5%;
+    }
+   
+    
+        .logo
+    {
+        display:none;
+        
+    }
+    .footercontainer
+    {
+        width: 100%;
+        padding: 50px 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+    .socialicon .icons
+    {
+        margin-left: 0%;
+    }
+    .socialicon .icon1
+    {
+        margin-left: 0%;
+    }
+    .socialicon a
+    {
+        
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        margin:28px;
+        width:43px;
+        min-height: 40px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    .socialicon a i
+    {
+          font-size: 1.7em;
+          color:rgb(0, 0, 0);
+          opacity: 0.9;
+          margin-top: 7px;
+          justify-content: center;
+          
+    }
+    .f_content
+    {
+        display: block;
+      justify-content: center;
+      margin-left:3px; 
+      margin-right: 0%;
+       
+    } 
+    
+    .aboutFooter ul
+    {
+        display: block;
+        margin-top: 10px;
+      
+    }
+    .aboutFooter ul li 
+{
+    margin-top: 28px;
+}
+    .aboutFooter ul li a
+    {
+    color: white;
+    margin: 3px;
+    text-decoration: none;
+    font-size:0.9em;
+    opacity:0.7;
+    transition:0.5s;
+    }
+
+
 }

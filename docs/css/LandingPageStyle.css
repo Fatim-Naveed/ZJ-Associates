@@ -17,6 +17,7 @@ html,body {
      width: 100%;
     position:fixed;
     display: block;
+    text-align: center;
     animation-name: example5;
     animation-duration: 4s;
     animation-delay: 4s;
@@ -25,8 +26,10 @@ html,body {
 {
     z-index: 100;
     display: flex;
-    margin-left: 45%;
-    margin-top: 10%;
+    margin-top: 20%;
+    /* margin-left: 45%; */
+    /* margin-top: 10%; */
+    justify-content: center;
 }
 
 
@@ -35,7 +38,7 @@ html,body {
     position: relative;
     color:rgb(0, 0, 0);
     font-size:3em;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     margin-right: 1%;
     display:inline;
     animation-name: example1;
@@ -47,7 +50,7 @@ html,body {
     position: relative;
     color:rgb(0, 0, 0);
     font-size:3em;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     margin-right: 1%;
     display:inline;
     animation-name: example2;
@@ -62,7 +65,7 @@ html,body {
     
    
     font-size:3em;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     display:inline;
     animation-name: example3;
     animation-duration: 7s;
@@ -73,9 +76,9 @@ html,body {
     position: relative;
     color:rgb(0, 0, 0);
     
-    margin-left: 41%;
+    /* margin-left: 41%; */
     font-size:2em;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     display:inline;
     animation-name: example4;
     animation-duration: 5s;
@@ -103,4 +106,18 @@ html,body {
 @keyframes example5 {
     0%   { background-color: rgb(0, 0, 0); height: 100%;}
     100%  { background-color: rgb(255, 255, 255);  height: 0%;}
+}
+@media only screen and (max-width:600px)
+{
+   .content1 
+   {
+    margin-top: 90%;
+   }
+}
+@media only screen and (max-width:950px)
+{
+   .content1 
+   {
+    margin-top: 70%;
+   }
 }

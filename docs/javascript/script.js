@@ -64,17 +64,74 @@ Righticon.addEventListener('click', function (e)
         }       
     })
     
-    
-    // removing date from image on small screen
+function myMobileView(widthX)
+{
+    if(widthX.matches)
+    {
+        let Images= document.querySelectorAll('.images');
+        
+        for(let i=0;i<Images.length;i++)
+        {           
+            const newdiv=document.createElement("div");
+            const temp=document.createElement("div");
+
+            newdiv.classList.add('myMobileView')
+            
+            if(Images[i].children[0].className == "myMobileView")
+            {
+                continue;
+            }
+            newdiv.innerHTML= Images[i].innerHTML;
+            temp.innerHTML= Images[i].innerHTML;
+            let childCount=newdiv.childElementCount
+
+            for(let j=0;j<childCount-2;j++)
+            {
+                 newdiv.removeChild(newdiv.lastElementChild)
+                
+            }
+            for(let j=0;j<2;j++)
+            {
+                temp.removeChild(temp.firstElementChild)   
+                Images[i].removeChild(Images[i].firstElementChild)
+            }
+           
+            // console.log(newdiv)
+            // console.log(temp.innerHTML)
+   
+            // console.log(Images[i])
+              Images[i].insertBefore(newdiv,Images[i].firstChild);
+
+            //    console.log(Images[i])
+        }
+    }
+    else
+    {
+        console.log("out of mobile view");
+        
+    }
+
+}
+let widthX=window.matchMedia('(max-width:650px)')
+    myMobileView(widthX);
+    widthX.addEventListener('change',function()
+    {
+       myMobileView(widthX);
+    })
+// removing date from image on small screen
     
 document.getElementById('imageid1').addEventListener('click',function(e)
 {
+    // console.log("in");
         document.getElementById('textImageid1').classList.toggle("addtexthovering");
+        document.getElementById('textImageid1').classList.remove("zoomtext");
         document.getElementById('imageid1').classList.toggle("addhov");
+        document.getElementById('imageid1').classList.remove("zoomImage");
+        
         document.getElementById('scrollmenu1').classList.toggle("UnhideText");
         document.getElementById("subtexthide1").classList.toggle("UnhideText");
         let subclasses=document.getElementById("scrollmenu1");
-        for(let i=2;i<subclasses.childElementCount;i++)
+        for(let i=1;i<subclasses.childElementCount;i++)
         {
             document.getElementById(subclasses.children[i].id).classList.toggle("UnhideText");
         }

@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+/*//////////////////////////// career navbar //////////////////////////////////////////*/
 .careernavbar{
     width: 100%;
     height: 50px;
@@ -26,7 +26,7 @@
    
  
 }
-
+/* //////////////////////////career content////////////////////////////////////// */
 .container
 {
     width:80%;
@@ -34,7 +34,7 @@
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 350px;
+    height: 200px;
     border-radius: 5px;
     background-color: rgb(173, 173, 173);
 }
@@ -54,6 +54,7 @@
     font-size: 50px;
     margin-top: 2px;
 }
+/*////////////////////////////// main navbar////////////////////////////////////////////// */
 nav
 {
     
@@ -204,6 +205,7 @@ nav
     width: 3%;
     margin-left: 0cm;    
 }
+/*   ////////////////////////////career in mobile view ///////////////////////////////////////*/
 @media only screen and (max-width:700px)  {
     .sub1
 {
@@ -223,13 +225,14 @@ nav
 }
 }
 
-/* footer css */
+/* ///////////////////////////////////////footer css//////////////////////////////////////// */
 footer
 {
     
     background-color: black;
-    margin-top:10px;
-     height: 800px;
+   
+    width: 100%;
+  
  
 }
 .footercontainer
@@ -333,9 +336,10 @@ transition:0.5s;
 {
   color:white;
 }
-
-@media  (max-width:900px)
+/*//////////////////////////////////////// footer in tablet view //////////////////////////////////////////// */
+@media  (max-width:950px)
 {
+     /* main nav bar  */
     .lefticonbar
 {
     width: 4%;
@@ -346,6 +350,11 @@ transition:0.5s;
     width: 4%;
     margin-left: 0cm;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
     .maintext
 {
     font-size: 40px;
@@ -354,6 +363,20 @@ transition:0.5s;
 {
     font-size: 30px;
     margin-top: 2px;
+}
+.socialicon
+{
+    margin-left: 4.4%;
+    margin-top: 10px;
+    justify-content: left;
+}
+.socialicon .icons
+{
+    margin-left: 15%;
+}
+.socialicon .icon1
+{
+    margin-left: 17%;
 }
     .socialicon a
 {
@@ -382,7 +405,8 @@ transition:0.5s;
 {
     display: block;
   justify-content: center;
-  margin-left:5px; 
+  margin-left:auto;
+  margin-right: auto;  
    
 } 
 .logo
@@ -395,75 +419,106 @@ transition:0.5s;
 }
     
 }
+/* ////////////////////////////////////////footer in mobile view //////////////////////////////////////////  */
 @media  (max-width:650px)
 {
-.lefticonbar
-{
-    width: 5%;
-    margin-left: 0cm;
-}
-.Righticonbar
-{
-    width: 5%;
-    margin-left: 0cm;
-}
-    .logo
-{
-    width:20%;
-    align-self: flex-start;
-    margin-top: 40px;
-    margin-left: 4%; 
+    /* main nav bar  */
+    .lefticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
+    .Righticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
+    footer{
+          position: fixed;
+          bottom: 0;
+    }
     
-}
-.socialicon a
-{
+        .logo
+    {
+        display:none;
+        
+    }
+    .footercontainer
+    {
+        width: 100%;
+        padding: 50px 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
     
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    margin:16px;
-    width:27px;
-    min-height: 27px;
-    border-radius: 200px; 
-    justify-content: center;
-    text-align: center;
     
-}
-
-.socialicon a i
-{
-      font-size: 0.8em;
-      color:rgb(0, 0, 0);
-      opacity: 0.9;
-      margin-top: 7px;
+    .socialicon .icons
+    {
+        margin-left: 0%;
+    }
+    .socialicon .icon1
+    {
+        margin-left: 0%;
+    }
+    .socialicon a
+    {
+        
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        margin:18px;
+        width:29px;
+        min-height: 29px;
+        border-radius: 200px; 
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    .socialicon a i
+    {
+          font-size: 1em;
+          color:rgb(0, 0, 0);
+          opacity: 0.9;
+          margin-top: 7px;
+          justify-content: center;
+          
+    }
+    .f_content
+    {
+        display: block;
       justify-content: center;
+      margin-left:3px; 
+      margin-right: 0%;
+       
+    } 
+    
+    .aboutFooter ul
+    {
+        display: block;
+        margin-top: 10px;
       
-}
-.f_content
+    }
+    .aboutFooter ul li 
 {
-    display: block;
-  justify-content: center;
-  text-align: center;
-  margin-left:3px; 
-  margin-right: 0%;
-   
-} 
-
-.aboutFooter ul li a
-{
-color: white;
-margin: 3px;
-text-decoration: none;
-font-size:0.9em;
-opacity:0.7;
-transition:0.5s;
+    margin-top: 8px;
 }
+    .aboutFooter ul li a
+    {
+    color: white;
+    margin: 3px;
+    text-decoration: none;
+    font-size:0.9em;
+    opacity:0.7;
+    transition:0.5s;
+    }
+/* career css media query  */
 .maintext
 {
-    font-size: 30px;
+    font-size: 20px;
 }
 .subtext
 {
-    font-size: 20px;
-    margin-top: 2px;
+    font-size: 10px;
+    margin-top: 10px;
 }
 }
