@@ -313,6 +313,29 @@ nav
   opacity: 1;
   transform: scale(1);
 }
+
+.TextDescription1::-webkit-scrollbar {
+    display: none;
+}
+.TextDescription1
+{
+    
+    margin-top: 3%;
+    margin-left: 4%;
+    min-width:20%;
+    /* max-width:40%; */
+    height: 300px;
+    white-space: normal;
+    overflow-y: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    cursor:pointer;
+    opacity: 0;
+    /* transition: transform 1s; */
+    transition: opacity 900ms ease-in-out;
+    
+}
+
 .TextDescription
 {
     
@@ -332,7 +355,7 @@ nav
     
 }
 
-.TextDescription.UnhideText
+.TextDescription.UnhideText, .TextDescription1.UnhideText
 {
     opacity: 1;
     transform: scale(1);
@@ -458,6 +481,9 @@ nav
     /* transition: transform 1s; */
     transition: opacity 900ms ease-in-out;
 }
+.TextDescription1::-webkit-scrollbar {
+    display: none;
+}
 .TextDescription
 {
     
@@ -479,9 +505,6 @@ nav
     transition: opacity 900ms ease-in-out;
     box-shadow: 5px 3px 3px lightgray;
     
-}
-.TextDescription1::-webkit-scrollbar {
-    display: none;
 }
 
 .subtext1
@@ -511,64 +534,142 @@ nav
 @media only screen and (min-width:651px) and (max-width:1075px)
 {
 
-    .lefticonbar
-    {
-        width: 4%;
-        margin-left: 0cm;
-    }
-    .Righticonbar
-    {
-        width: 4%;
-        margin-left: 0cm;
-    }
-    .images{
-    
-        max-height: max-content;
-         margin-top: 3%;
-          display: flex;
-          margin-left: auto;
-          margin-right: auto;
-   }
-   .TextDescription
+.lefticonbar
 {
+    width: 4%;
+    margin-left: 0cm;
+}
+.Righticonbar
+{
+    width: 4%;
+    margin-left: 0cm;
+}
+.images{
+
+    max-height: fit-content;
+        margin-top: 3%;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+}
+.images::-webkit-scrollbar
+{
+    width: 0;
+}
+.images.UnhideText
+{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.images .addhov
+{
+ transform: scale(1.09);
+ transition: transform 0.5s;
+ 
+}
+
+.textImage
+{
+    min-width: 185px;
+    margin-left: 3%;
+    margin-top: 2.5%;
+    padding-right: 2%; 
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+.images .addtexthovering
+{
+    transform: scale(1.1);
+    transition: transform 0.8s ;
+    padding-right: 2%; 
+    transition-property: padding-right 0.8s ; 
+    /* transition-duration: 0.5s; */
+    
+}
+.image
+{
+   
+       margin-top: 2.5%;
+       margin-left: 3%;
+       margin-right: 3%;
+       height: 0%;  
+       width: 45%; 
+       position: relative;
+       transition: transform 0.6s;
+       cursor:pointer;
+       box-shadow: 2px 4px 5px;
+
+}
+.TextDescription1
+{
+    /* display: none; */
+    height: 190px;
+    min-width: 33%;
+    margin: 5% 2% 2% 2%;
+    white-space: normal;
+    overflow-y: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    position: relative;
+    cursor:pointer;
+    opacity: 0;
+    /* transition: transform 1s; */
+    transition: opacity 900ms ease-in-out;
+}
+.TextDescription1::-webkit-scrollbar {
     display: none;
 }
-   .textImage
-   {
-       width:30%;
-       margin-left: 0%;
-       text-align: right;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       font-size: large;
-   }
-   .subtext1
-   {
-       margin-left: 0%;
-       opacity: 50%;
-      font-size: small;
-   }
-   .subtext2
-   {
-       margin-left: 0%;
-       opacity: 50%;
-      font-size: small;
-   }
-   .subtext3 ,.subtext4
-   {
+.TextDescription
+{
+
+    max-height: 200px;
+    min-width: 45%; 
+    
+    margin: 5% 2% 2% 0%;
+
+    white-space: normal;
+    overflow-y: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    position: relative;
+    cursor:pointer;
+    opacity: 0;
+    /* transition: transform 1s; */
+    transition: opacity 900ms ease-in-out;
+    box-shadow: 2px 4px 5px;
+    
+}
+.TextDescription.UnhideText, .TextDescription1.UnhideText
+{
+    opacity: 1;
+    transform: scale(1);
+    
+}
+.TextDescription::-webkit-scrollbar {
     display: none;
-   }
-   .image
-   {
-      
-          margin-left: 3%;
-          height: 0%;  
-          width: 45%; 
-          position: relative;
-          transition: transform 0.6s;
-          cursor:pointer;
-   
-   }
- 
+}
+
+
+.subtext1
+{
+    margin-left: 0%;
+    opacity: 50%;
+    font-size: small;
+}
+.subtext2
+{
+display: none;
+    margin-left: 0%;
+    opacity: 50%;
+    font-size: small;
+}
+.subtext3 ,.subtext4
+{
+display: none;
+}
 }
 /* ========================================================================================================== */
 /* footer css */
