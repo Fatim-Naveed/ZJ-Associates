@@ -4,6 +4,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.MainName a
+{
+    display: flex;
+    text-decoration: none;
+}
 /*people  nav bar */
 .peoplenavbar{
     width: 100%;

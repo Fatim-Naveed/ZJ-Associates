@@ -4,6 +4,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.MainName a
+{
+    display: flex;
+    text-decoration: none;
+}
 /*//////////////////////////// career navbar //////////////////////////////////////////*/
 .careernavbar{
     width: 100%;
@@ -205,6 +210,64 @@ nav
     width: 3%;
     margin-left: 0cm;    
 }
+/* side bar */
+.sidebar
+{
+    display: block;
+    width: 40px;
+    top:200px;
+    position: fixed;
+    z-index: 1;
+}
+.sideicons
+{
+   
+    display: grid;
+    line-height: 32px;
+}
+.sideicons p
+{
+   
+    margin-left:5px;
+     font-size: 1em;
+     font-family:system-ui;
+}
+.sideicons a
+{
+    
+    text-decoration: none;
+    background-color: white;
+    min-height: 20px;
+    border-radius: 200px; 
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sideicons a i
+{
+      font-size: 1.7em;
+      color:black;
+      opacity: 0.9;
+      margin-top: 10px;
+      justify-content: center;
+      
+}
+.sideicons  a:hover
+{
+    background-color: black;
+     transition: 0.5s;
+   
+
+}
+.sideicons  a:hover i
+{
+   color:white;
+     transition: 0.5s;
+   
+
+}
+ /* end of sidebar */
 /*   ////////////////////////////career in mobile view ///////////////////////////////////////*/
 @media only screen and (max-width:700px)  {
     .sub1
