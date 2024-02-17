@@ -139,30 +139,55 @@ document.getElementById('imageid1').addEventListener('click',function(e)
 })
 document.getElementById('imageid2').addEventListener('click',function(e)
 {
-    document.getElementById('imageid2').classList.toggle("addhov");
-    document.getElementById('textImageid2').classList.toggle("addtexthovering");
-    document.getElementById('scrollmenu2').classList.toggle("UnhideText");
-    document.getElementById("subtexthide2").classList.toggle("UnhideText");
-    let subclasses=document.getElementById("scrollmenu2");
-        for(let i=2;i<subclasses.childElementCount;i++)
+    // console.log("in");
+        document.getElementById('textImageid2').classList.toggle("addtexthovering");
+        document.getElementById('textImageid2').classList.remove("zoomtext");
+        document.getElementById('imageid2').classList.toggle("addhov");
+        document.getElementById('imageid2').classList.remove("zoomImage");
+        
+        document.getElementById('scrollmenu2').classList.toggle("UnhideText");
+        document.getElementById("subtexthide2").classList.toggle("UnhideText");
+        let subclasses=document.getElementById("scrollmenu2");
+        for(let i=1;i<subclasses.childElementCount;i++)
         {
             document.getElementById(subclasses.children[i].id).classList.toggle("UnhideText");
         }
-    
+        
 })
 document.getElementById('imageid3').addEventListener('click',function(e)
 {
-    document.getElementById('imageid3').classList.toggle("addhov");
-    document.getElementById('textImageid3').classList.toggle("addtexthovering");
-    document.getElementById('scrollmenu3').classList.toggle("UnhideText");
-    document.getElementById("subtexthide3").classList.toggle("UnhideText");
-    document.getElementById("subtexthide3").classList.toggle("UnhideText");
-    let subclasses=document.getElementById("scrollmenu3");
-        for(let i=2;i<subclasses.childElementCount;i++)
+    // console.log("in");
+        document.getElementById('textImageid3').classList.toggle("addtexthovering");
+        document.getElementById('textImageid3').classList.remove("zoomtext");
+        document.getElementById('imageid3').classList.toggle("addhov");
+        document.getElementById('imageid3').classList.remove("zoomImage");
+        
+        document.getElementById('scrollmenu3').classList.toggle("UnhideText");
+        document.getElementById("subtexthide3").classList.toggle("UnhideText");
+        let subclasses=document.getElementById("scrollmenu3");
+        for(let i=1;i<subclasses.childElementCount;i++)
         {
             document.getElementById(subclasses.children[i].id).classList.toggle("UnhideText");
         }
-    
+        
 })
+document.getElementById('imageid4').addEventListener('click',function(e)
+{
+    // console.log("in");
+        document.getElementById('textImageid4').classList.toggle("addtexthovering");
+        document.getElementById('textImageid4').classList.remove("zoomtext");
+        document.getElementById('imageid4').classList.toggle("addhov");
+        document.getElementById('imageid4').classList.remove("zoomImage");
+        
+        document.getElementById('scrollmenu4').classList.toggle("UnhideText");
+        document.getElementById("subtexthide4").classList.toggle("UnhideText");
+        let subclasses=document.getElementById("scrollmenu4");
+        for(let i=1;i<subclasses.childElementCount;i++)
+        {
+            document.getElementById(subclasses.children[i].id).classList.toggle("UnhideText");
+        }
+        
+})
+
     
 })();

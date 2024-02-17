@@ -1,26 +1,24 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.MainName a
-{
-    display: flex;
-    text-decoration: none;
-}
-/*///////////////////////////////// contact navbar///////////////////////////////////////// */
-.contactnavbar{
+/*about  nav bar */
+.aboutnavbar{
     width: 100%;
     height: 50px;
     background-color:rgb(0, 0, 0);
     padding-top: 10px;
     position: sticky;
     top:0px;
-    z-index: 90;   
+    z-index:90;
+  
+   
 }
 
-.contact{
+.abouttext{
 
     color:rgb(255, 255, 255);
     font-size: x-large;
@@ -29,109 +27,79 @@
    
  
 }
-/* ending of contact navbar */
-/* //////////////////////////////////content of contact///////////////////////////////////// */
-.container
+/* about content */
+.mission .heading 
 {
-    display:block;
-}
-.block1
-{
-    display:block;
-    margin-left: 6%;
-    margin-right: 6%;
-    
-    margin-top:5%;
-    justify-content: center;
-}
-
-.sub1
-{
-     display: flex;
-}
-.sub 
-{
-      width:45%;
-      height: 120px;
-      margin: 5px;
-      background-color: rgb(227, 227, 227);
-      border-radius:10px;
-      display: flex;
-      
-     
-}
-.blocks
-{
-    text-decoration: none;
-    color: black;
-    display: block;
-    min-width: 70%;
-    transition: 0.5s;
-    
-}
-
-
-.contactlogo a i
-{
-    
-    text-decoration: none;
-    color: black;
-    font-size:30px;
-    margin-top: 10px;
-    margin-left: 50px;
-    text-align: center;
-    justify-content: right;
-
-
-}
-
-.maintext
-{
-    margin-left: 8%;
-    margin-top: 4%;
-    font-size: larger;
+    font-size: 50px;
     font-family: sans-serif;
-    font-weight: 100;
-}
-.sub a:hover{
-    width: 75%;
-  
-    font-weight: 200;
-    transition: 0.5s;
+   margin-left: 10%;
+    margin-top: 60px;
     
 }
-.subtext
+.mission .content
 {
-    margin-left: 9%;
-    margin-top: 2%;
-    font-size: medium;
-    font-family: sans-serif;
-    font-weight: 100;
-}
-.number
-{
-    margin-left: 9%;
+    font-size: large;
    
-    font-size: medium;
+    margin-left: 10%;
+    padding-top: 30px;
+    margin-right: 10%;
+    
+   
+}
+.aboutus_content .heading
+{
+    font-size: 50px;
     font-family: sans-serif;
-    font-weight: 100;
-    opacity: 50%;
+    margin-left: 10%;
+    margin-top: 40px;
 }
-.contactimg
+.aboutus_content .content
 {
-    width: 50%;
-  
+    font-size: large;
+    margin-left: 10%;
+    padding-top: 30px;
+    margin-right: 10%;
+        column-count: 2;
+        column-width: 30%;
+        column-gap: 10%;
+      
+   
 }
-.block2
+.image1
 {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 15%;
-    display: block;
-    text-align: center;
+    max-height: 500px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
 }
-/* end of content */
-/*////////////////////////// start of navbar //////////////////////////////*/
+/* media query of about us for mobile and tablet for content */
+@media (max-width:900px) {
+    .aboutus_content .content
+{
+    font-size: large;
+    margin-left: 10%;
+    padding-top: 30px;
+    margin-right: 10%;
+    column-count: 1;
+    column-width: 30%;
+    column-gap: 10%;
+      
+   
+}
+}
+/* media query for mobile view only headings */
+@media only screen and (max-width:650px)
+{
+    .mission .heading{
+        font-size: 30px;
+    }
+    .aboutus_content .heading
+    {
+        font-size: 30px;
+    }
+}
+/* main nav bar */
 nav
 {
     
@@ -282,81 +250,25 @@ nav
     width: 3%;
     margin-left: 0cm;    
 }
-/* end of .navbar */
-/* side bar */
-.sidebar
-{
-    display: block;
-    width: 40px;
-    top:200px;
-    position: fixed;
-    z-index: 1;
-    
-}
-.sideicons
-{
-   
-    display: grid;
-    line-height: 32px;
-}
-.sideicons p
-{
-   
-    margin-left:5px;
-     font-size: 1em;
-     font-family:system-ui;
-}
-.sideicons a
-{
-    
-    text-decoration: none;
-    background-color: white;
-    min-height: 20px;
-    border-radius: 200px; 
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.sideicons a i
-{
-      font-size: 1.7em;
-      color:black;
-      opacity: 0.9;
-      margin-top: 10px;
-      justify-content: center;
-      
-}
-.sideicons  a:hover
-{
-    background-color: black;
-     transition: 0.5s;
-   
-
-}
-.sideicons  a:hover i
-{
-   color:white;
-     transition: 0.5s;
-   
-
-}
- /* end of sidebar */
-
-/*////////////////////////////////////////////////////////////////// footer css /////////////////////////////////////////////*/
+/* ========================================================================================================== */
+/* footer css */
+/* footer css */
 footer
 {
     
     background-color: black;
-    margin-top:10px;
-    margin-bottom: 0%;
+   
+    width: 100%;
+  margin-top: 10%;
+ 
 }
 .footercontainer
 {
     width:100%;
    padding-top: 20px;
    display:flex;
-  
+   
+   
     
 }
 .socialicon
@@ -364,11 +276,12 @@ footer
     display: flex;
     justify-content: center;
 }
+
 .socialicon a
 {
     
     text-decoration: none;
-    background-color: white;
+    background-color: rgb(255, 251, 251);
     margin:28px;
     width:50px;
     min-height: 50px;
@@ -381,12 +294,13 @@ footer
 .socialicon a i
 {
       font-size: 2em;
-      color:black;
+      color:rgb(0, 0, 0);
       opacity: 0.9;
       margin-top: 10px;
       justify-content: center;
       
 }
+
 .socialicon  a:hover
 {
     background-color: black;
@@ -437,6 +351,14 @@ font-size:1.3em;
 opacity:0.7;
 transition:0.5s;
 }
+body{
+    min-height: 100vh;
+  }
+  footer{
+    position: sticky;
+    top:100%;
+    margin-top: 10px;
+  }
 .aboutFooter ul li a:hover
 {
       opacity:1;
@@ -449,15 +371,30 @@ transition:0.5s;
 {
   color:white;
 }
-iframe
+/* footer in tablet view */
+@media  (max-width:1050px)
 {
-    
-    filter:invert(100%);
-}
-/*/////////////////////////////////////////////////////////// tablet view  ////////////////////////////////////////////////*/
-@media  (max-width:900px)
-{
-    .socialicon
+   
+    .lefticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
+    .Righticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
+
+  body{
+    min-height: 100vh;
+  }
+  footer{
+    position: sticky;
+    top:100%;
+    margin-top: 10px;
+  }
+.socialicon
 {
     margin-left: 4.4%;
     margin-top: 10px;
@@ -512,137 +449,19 @@ iframe
 }
     
 }
-/*////////////////////////////////////////////// mobile view ////////////////////////////////////////////   */
-@media(max-width:650px)
-{
-    /* main nav bar  */
-    .lefticonbar
-{
-    width: 5%;
-    margin-left: 0cm;    
-}
-.Righticonbar
-{
-    width: 5%;
-    margin-left: 0cm;    
-}
-
-    .logo
-{
-    display:none;
-    
-}
-.footercontainer
-{
-    width: 100%;
-    padding: 50px 30px 20px;
-    text-align: center;
-    justify-content: center;
-}
-
-
-.socialicon .icons
-{
-    margin-left: 0%;
-}
-.socialicon .icon1
-{
-    margin-left: 0%;
-}
-.socialicon a
-{
-    
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    margin:18px;
-    width:29px;
-    min-height: 29px;
-    border-radius: 200px; 
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.socialicon a i
-{
-      font-size: 1em;
-      color:rgb(0, 0, 0);
-      opacity: 0.9;
-      margin-top: 7px;
-      justify-content: center;
-      
-}
-.f_content
-{
-    display: block;
-  justify-content: center;
-  margin-left:3px; 
-  margin-right: 0%;
-   
-} 
-.aboutFooter ul
-{
-    display: block;
-    margin-top: 10px;
-}
-.aboutFooter ul li 
-{
-    margin-top: 8px;
-}
-.aboutFooter ul li a
-{
-color: white;
-margin: 3px;
-text-decoration: none;
-font-size:0.9em;
-opacity:0.7;
-transition:0.5s;
-}
-
-iframe
-{
-    width:80%;
-    height: 400px;
-    margin-left: 30px;
-    filter:invert(100%);
-}
-/* side bar */
-.sidebar
-{
-    display: none;    
-}
- /* end of sidebar */
-}
-
-/*  for mobile view*/
-@media only screen and (max-width: 700px)
-{
-.sub1
-{
-     display: block;
-}
-.sub 
-{
-      width:90%;
-      height: 120px;
-      margin: 2%;
-      margin-left: 5%;
-      background-color: rgb(235, 234, 234);
-      border-radius:10px;
-      display: flex;
-      
-     
-}
-/* side bar */
-.sidebar
-{
-    display: none;    
-}
-}
 /* footer in mobile view  */
 @media  (max-width:650px)
 {
-    
+    .lefticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
+    .Righticonbar
+    {
+        width: 5%;
+        margin-left: 0cm;    
+    }
    
     
         .logo
@@ -672,9 +491,10 @@ iframe
         
         text-decoration: none;
         background-color: rgb(255, 255, 255);
-        margin:28px;
-        width:43px;
-        min-height: 40px;
+        margin:18px;
+        width:29px;
+        min-height: 29px;
+        border-radius: 200px; 
         justify-content: center;
         text-align: center;
         
@@ -682,7 +502,7 @@ iframe
     
     .socialicon a i
     {
-          font-size: 1.7em;
+          font-size: 1em;
           color:rgb(0, 0, 0);
           opacity: 0.9;
           margin-top: 7px;
@@ -706,7 +526,7 @@ iframe
     }
     .aboutFooter ul li 
 {
-    margin-top: 28px;
+    margin-top: 8px;
 }
     .aboutFooter ul li a
     {
@@ -720,4 +540,3 @@ iframe
 
 
 }
-

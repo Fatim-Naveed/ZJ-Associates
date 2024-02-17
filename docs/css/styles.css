@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior:smooth;
 }
+body{
+    height: 100dvh;
+}
 
 
 /*//////////////////////////////////////// nav bar  ////////////////////////////////////////////*/
@@ -219,7 +222,7 @@ nav
  /* end of sidebar */
  /* ==================================================================================================== */
 /*================================ largest screen ======================================================*/
-@media only screen and (min-width:1075px)
+@media only screen and (min-width:1100px)
 {
     
 .images
@@ -239,7 +242,7 @@ nav
 {
     transform: scale(1.12);
 
-    width: 25%;
+    width: 30%;
 }
 .images .zoomtext
 {
@@ -257,9 +260,9 @@ nav
     transform: scale(1);
     transition: transform 1.5s ease;
     
-    min-width:185px;
+    min-width: 30%;
     padding-right: 2%;
-    margin-left: 200px;
+    /* margin-left: 10%; */
     text-align: right;
     font-family:system-ui;
     font-size: larger;
@@ -275,13 +278,14 @@ nav
     transform: scale(1.15);
     transition: transform 1s ease-in-out;
     padding-top: 2%;
+    padding-right: 5%;
     transition-property: padding-top ;
     transition-duration: 1s;
 }
 .images .addhov
 {
     transform: scale(1.5);
-    width: 25%;
+    width: 30%;
 }
 .subtext1
 {
@@ -320,18 +324,18 @@ nav
 .TextDescription1
 {
     
-    margin-top: 3%;
-    margin-left: 4%;
-    min-width:20%;
-    /* max-width:40%; */
-    height: 300px;
+    margin-top: 2%;
+    padding-left: 5%;
+    min-width:30%;
+
+    height: 360px;
     white-space: normal;
     overflow-y: scroll;
     font-family:Arial, Helvetica, sans-serif;
     position: relative;
     cursor:pointer;
     opacity: 0;
-    /* transition: transform 1s; */
+    
     transition: opacity 900ms ease-in-out;
     
 }
@@ -339,11 +343,11 @@ nav
 .TextDescription
 {
     
-    margin-top: 3%;
+    /* margin-top: 5%; */
     margin-left: 4%;
     min-width:40%;
     /* max-width:40%; */
-    height: 300px;
+    /* height: 300px; */
     white-space: normal;
     overflow-y: scroll;
     font-family:Arial, Helvetica, sans-serif;
@@ -369,8 +373,8 @@ nav
 {
        /* margin-top: 3%; */
       
-       margin: 5% 8% 5% 8%;
-       width: 25%; 
+       margin: 5% 5% 5% 5%;
+       width: 30%; 
        position: relative;
        transition: transform 1s;
        cursor:pointer;
@@ -380,7 +384,7 @@ nav
 
 }
 /*====================== media query for mobile============================================ */
-@media only screen and (max-width:650px)
+@media only screen and (max-width:500px)
 {
 .lefticonbar
 {
@@ -395,7 +399,8 @@ nav
 .images
 {   
     max-width: 100%;
-    height: 300px;
+    min-height: 200%;
+    max-height: 50%;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
@@ -415,11 +420,10 @@ nav
 .myMobileView
 {
    
-    min-height: 250px;
-    max-height: 300px;
-    min-width: 85%;
-    max-width: 100%;
-    margin: 7% 5% 2% 8%;
+    /* height: 100%; */
+    min-width: 90%;
+    /* max-width: 100%; */
+    margin: 4% 5% 4% 5%;
     position: relative;
     display: flex;
     
@@ -428,14 +432,11 @@ nav
 }
 .image
 {
-    margin-top: 10px;
-    align-self: center;
-    /* margin-left: 7%; */
- 
-
-      width:-webkit-fill-available;
+      margin-left: 5%;
+      margin-right: 5%;
+      width:90%;
+      max-height:100%;
       max-width: 100%;
-    max-height:100%;
 
       position: relative;
       transition: transform 0.6s;
@@ -445,10 +446,11 @@ nav
 .textImage
 {
 
+    margin-left: 5%;
+    margin-right: 5%;
    width:max-content;
    padding-top: 1%;
    width:fit-content;
-   /* margin-left: 13%; */
   
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: small;
@@ -468,7 +470,8 @@ nav
 }
 .TextDescription1
 {
-    height: 70%;
+    display: none;
+    height: 20px;
     min-width: 33%;
     margin: 8% 2% 2% 2%;
     white-space: normal;
@@ -487,8 +490,9 @@ nav
 .TextDescription
 {
     
-    /* min-height: 230px; */
-    max-height: 230px;
+  
+    /* min-height: 230px;
+    max-height: 230px; */
     min-width: 80%;
     /* max-width: 100%; */
     
@@ -531,7 +535,7 @@ nav
 
 }
 /*=============================== media query  tablet  ======================== */
-@media only screen and (min-width:651px) and (max-width:1075px)
+@media only screen and (min-width:500px) and (max-width:1100px)
 {
 
 .lefticonbar
@@ -546,7 +550,7 @@ nav
 }
 .images{
 
-    max-height: fit-content;
+    height: 60dvh;
         margin-top: 3%;
         display: flex;
         overflow: hidden;
@@ -572,10 +576,10 @@ nav
 
 .textImage
 {
-    min-width: 185px;
-    margin-left: 3%;
+    min-width: 25%;
+    margin-left: 1%;
     margin-top: 2.5%;
-    padding-right: 2%; 
+    padding-right: 2%;
     text-align: right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
@@ -592,11 +596,8 @@ nav
 .image
 {
    
-       margin-top: 2.5%;
-       margin-left: 3%;
-       margin-right: 3%;
-       height: 0%;  
-       width: 45%; 
+    margin: 2.5% 3% 2.5% 3%;
+       width:400px; 
        position: relative;
        transition: transform 0.6s;
        cursor:pointer;
@@ -605,16 +606,16 @@ nav
 }
 .TextDescription1
 {
-    /* display: none; */
-    height: 190px;
-    min-width: 33%;
-    margin: 5% 2% 2% 2%;
+    /* display: none;  */
+    min-height: 30%;
+    min-width: 30%;
+    margin: 3% 2% 2% 2%;
     white-space: normal;
     overflow-y: scroll;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     position: relative;
-    cursor:pointer;
+    cursor: pointer;
     opacity: 0;
     /* transition: transform 1s; */
     transition: opacity 900ms ease-in-out;
@@ -625,10 +626,10 @@ nav
 .TextDescription
 {
 
-    max-height: 200px;
+    /* max-height: 200px; */
     min-width: 45%; 
     
-    margin: 5% 2% 2% 0%;
+    margin: 2% 2% 2% 2%;
 
     white-space: normal;
     overflow-y: scroll;
@@ -688,6 +689,7 @@ footer
     width:100%;
    padding-top: 20px;
    display:flex;
+   justify-content: center;
    
    
     
@@ -740,15 +742,16 @@ footer
 {
     display: block;
   justify-content: center;
-  margin-left: 150px; 
+  margin-right: 40%; 
    
 }
 .logo
 {
-    width:130px;
+    width: 130px;
     align-self: flex-start;
     margin-top: 40px;
-    margin-left: 130px; 
+    margin-left: 30%;
+    margin-right: 5%;
     
 }
 .aboutFooter
