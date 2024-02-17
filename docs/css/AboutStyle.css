@@ -5,6 +5,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.MainName a
+{
+    display: flex;
+    text-decoration: none;
+}
 /*about  nav bar */
 .aboutnavbar{
     width: 100%;
